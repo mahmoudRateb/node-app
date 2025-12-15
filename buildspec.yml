@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+     install:
+          runtime-versions:
+              nodejs: latest
+          commands:
+              - echo "installing something"
+     pre_build:
+          commands:
+              - echo "we are in build phase"
+     build:
+          commands:
+              - echo "in build block"
+     post_build:
+          commands:
+              - echo "5alasna"
